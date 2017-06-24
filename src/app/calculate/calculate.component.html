@@ -1,7 +1,7 @@
 <div class="card">
   <div class="card-content">
     <div class="nav-center field">
-      <label class="label" style="margin-top:5px;">เดือนแรกที่มีประจำเดือน:&nbsp;&nbsp;&nbsp;&nbsp; </label>
+      <label class="label" style="margin-top:5px;">เดือนของประจำเดือน:&nbsp;&nbsp;&nbsp;&nbsp; </label>
       <br>
       <p class="control">
         <span class="select">
@@ -71,12 +71,18 @@
         ค้นหาวันแดงเดือด
       </a>
     </div>
+    <div class="nav-center field">
+    <p class="has-text-centered">วันแรกของประจำเดือน</p>
+    </div>
   </div>
 </div>
 <div class="card" *ngIf="isProcessing">
   <div class="card-content">
       <div class="nav-center field">
           <p class="has-text-centered"><b>การเกิดของวันแดงเดือด</b></p>
+      </div>
+      <div class="nav-center field">
+        <img src="assets/images/holiday.png">
       </div>
       <div class="nav-center field">
           <p class="has-text-centered"><b><i>ระหว่างช่วงเวลา: </i></b><i>{{datePeriodMin}} {{monthPeriodMin}} พ.ศ. {{yearPeriodMin}}&nbsp;&nbsp;</i></p>
