@@ -71,13 +71,13 @@
         ค้นหาวันแดงเดือด
       </a>
     </div>
-    <div class="nav-center field">
-    <p class="has-text-centered">วันแรกของประจำเดือน</p>
-    </div>
   </div>
 </div>
 <div class="card" *ngIf="isProcessing">
   <div class="card-content">
+      <div class="nav-center field">
+        <p class="has-text-centered"><b><i>ประจำเดือนครั้งแรก:</i></b> <i>{{datePeriodFirst}} {{monthPeriodFirst}} พ.ศ. 2560</i></p>
+      </div>      
       <div class="nav-center field">
           <p class="has-text-centered"><b>การเกิดของวันแดงเดือด</b></p>
       </div>

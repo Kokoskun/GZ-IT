@@ -30,7 +30,8 @@
       "sizes": "512x512",  
       "type": "image/png"  
     }],
-  "start_url": "/index.html",
+  "start_url": "/",
+  "scope": "/",
   "display": "standalone",
   "background_color": "#ff3860",
   "theme_color": "#eb002f"

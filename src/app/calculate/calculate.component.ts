@@ -16,10 +16,11 @@ public isProcessing = false;
 public datePeriodMax=0;
 public datePeriod=0;
 public datePeriodMin=0;
-
+public datePeriodFirst = 0;
 public monthPeriodMax=null;
 public monthPeriod=null;
 public monthPeriodMin=null;
+public monthPeriodFirst = null;
 
 public yearPeriodMax=0;
 public yearPeriod=0;
@@ -61,7 +62,8 @@ public yearPeriodMin=0;
     var valueMonth = this.valueMonth;
     var valueDateMax = this.checkMaxDate(valueMonth);
     var valueDateCheck = valueDateMax - this.valueDate;
-
+    this.monthPeriodFirst = this.setTextMonth(this.valueMonth);
+    this.datePeriodFirst = this.valueDate;
     //Check value Date
     if(valueDateCheck==0){
       valueMonth = parseInt(valueMonth)+1;
