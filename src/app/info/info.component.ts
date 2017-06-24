@@ -8,8 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class InfoComponent implements OnInit {
 
   constructor() {
-	var navTab = document.getElementById("info");
-	navTab.className += " is-active";  
+	var navTabInfo = document.getElementById("info");
+	var navTabCalculate = document.getElementById("calculate");
+	var navTabDefend = document.getElementById("defend");
+	navTabInfo.className += " is-active";
+	navTabDefend.classList.remove("is-active");
+	navTabCalculate.classList.remove("is-active");
+
   }
 
   ngOnInit() {

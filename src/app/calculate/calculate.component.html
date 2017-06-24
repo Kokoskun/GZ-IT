@@ -1,1 +1,66 @@
-<p>info works!</p>
+<div class="card">
+  <div class="card-content">
+    <div class="nav-center field">
+      <label class="label" style="margin-top:5px;">เดือนแรกที่มีประจำเดือน:&nbsp;&nbsp;&nbsp;&nbsp; </label>
+      <br>
+      <p class="control">
+        <span class="select">
+          <select ngModel="month" (change)="checkDate($event)">
+            <option [value]="1">มกราคม</option>
+            <option [value]="2">กุมภาพันธ์</option>
+            <option [value]="3">มีนาคม</option>
+            <option [value]="4">เมษายน</option>
+            <option [value]="5">พฤษภาคม</option>
+            <option [value]="6">มิถุนายน</option>
+            <option [value]="7">กรกฎาคม</option>
+            <option [value]="8">สิงหาคม</option>
+            <option [value]="9">กันยายน</option>
+            <option [value]="10">ตุลาคม</option>
+            <option [value]="11">พฤศจิกายน</option>
+            <option [value]="12">ธันวาคม</option>
+          </select>
+        </span>
+      </p>
+    </div>
+    <div class="nav-center field">
+      <label class="label" style="margin-top:5px;">วันแรกที่มีประจำเดือน:&nbsp;&nbsp;&nbsp;&nbsp; </label>
+      <br>
+      <p class="control">
+        <span class="select">
+          <select ng-model="date">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+            <option>13</option>
+            <option>14</option>
+            <option>15</option>
+            <option>16</option>
+            <option>17</option>
+            <option>18</option>
+            <option>19</option>
+            <option>20</option>
+            <option>22</option>
+            <option>23</option>
+            <option>24</option>
+            <option>25</option>
+            <option>26</option>
+            <option>27</option>
+            <option>28</option>
+            <option *ngIf="date29">29</option>
+            <option *ngIf="date30">30</option>
+            <option *ngIf="date31">31</option>
+          </select>
+        </span>
+      </p>
+    </div>
+  </div>
+</div>

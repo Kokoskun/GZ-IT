@@ -20,6 +20,10 @@ const appRoutes: Routes = [
   {
     path: 'defend',
     component: DefendComponent
+  },
+  {
+  	path: '**', 
+  	component: CalculateComponent 
   }
 ];
 @NgModule({
