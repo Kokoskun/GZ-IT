@@ -64,14 +64,26 @@
       </p>
     </div>
     <div class="nav-center field">
-      
       <p class="has-text-centered" *ngIf="!isSelect" style="color:#6c1414;">
         กรุณาเลือกข้อมูลของเดือนและวันที่เป็นประจำเดือนวันแรก
       </p>
       <a class="button is-info" (click)="processing(1,2)" *ngIf="isSelect">
         ค้นหาวันแดงเดือด
       </a>
-
     </div>
+  </div>
+</div>
+<div class="card" *ngIf="isProcessing">
+  <div class="card-content">
+      <div class="nav-center field">
+          <p class="has-text-centered"><b>การเกิดของวันแดงเดือด</b></p>
+      </div>
+      <div class="nav-center field">
+          <p class="has-text-centered"><b><i>ระหว่างช่วงเวลา: </i></b><i>{{datePeriodMin}} {{monthPeriodMin}} พ.ศ. {{yearPeriodMin}}&nbsp;&nbsp;</i></p>
+          <p class="has-text-centered"><b><i>ถึง&nbsp;&nbsp;</i></b> <i>{{datePeriodMax}} {{monthPeriodMax}} พ.ศ. {{yearPeriodMax}} </i></p>
+      </div>
+      <div class="nav-center field notification is-danger">
+          <p class="has-text-centered"><b><i>ช่วงเวลาเฉลี่ยประมาณ: </i></b> <i>{{datePeriod}} {{monthPeriod}} พ.ศ. {{yearPeriod}}</i></p>
+      </div>
   </div>
 </div>
