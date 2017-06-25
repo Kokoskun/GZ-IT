@@ -22,9 +22,7 @@
         "styles.css",
         "../node_modules/bulma/css/bulma.css"
       ],
-      "scripts": [
-        "../node_modules/sw-toolbox/sw-toolbox.js"
-      ],
+      "scripts": [],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
