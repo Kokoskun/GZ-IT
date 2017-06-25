@@ -32,6 +32,11 @@
     }],
   "start_url": "/",  
   "scope": "/",
+  "prefer_related_applications": true,
+  "related_applications": [{
+	  "platform": "web",
+	  "url": "https://gz-it-a8b2c.firebaseapp.com"
+  }],
   "display": "standalone",
   "background_color": "#ff3860",
   "theme_color": "#eb002f"
