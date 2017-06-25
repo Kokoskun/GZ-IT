@@ -100,15 +100,26 @@
          <h3 class="has-text-centered" style="text-align: center;">Loading...</h3>
       </div>
   </app-root>
- <script type="text/javascript">
-    if('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('service-worker.js').then(function(registration) {
-        // Registration was successful
-      }).catch(function(err) {
-        // registration failed :(
-        console.log('ServiceWorker registration failed: ', err);
-      });
-    }
-    </script>
+	<script type="text/javascript">
+	    if('serviceWorker' in navigator) {
+	      navigator.serviceWorker.register('service-worker.js').then(function(registration) {
+	        // Registration was successful
+	      }).catch(function(err) {
+	        // registration failed :(
+	        console.log('ServiceWorker registration failed: ', err);
+	      });
+	    }
+		window.addEventListener('beforeinstallprompt', function(e) {
+		  e.userChoice.then(function(choiceResult) {
+		    console.log(choiceResult.outcome);
+		    if(choiceResult.outcome == 'dismissed') {
+		      console.log('User cancelled home screen install');
+		    }
+		    else {
+		      console.log('User added to home screen');
+		    }
+		  });
+		});
+	</script>
 <script type="text/javascript" src="inline.80caacb3792485df377e.bundle.js"></script><script type="text/javascript" src="polyfills.07685bca73161be59257.bundle.js"></script><script type="text/javascript" src="vendor.4373e21ea926766fe69b.bundle.js"></script><script type="text/javascript" src="main.9b5cbbaa9f6719390c83.bundle.js"></script></body>
 </html>
